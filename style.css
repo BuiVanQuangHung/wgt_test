@@ -173,6 +173,45 @@
   margin-bottom: 1rem;
 }
 
+.footer__company-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 7.5rem;
+  gap: 1rem;
+}
+
+.footer__section {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__section p {
+  margin: 0;
+}
+
+.footer__contact-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.brand-footer {
+  background-color: #fafafa;
+  padding: 0 7.5rem;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-footer__social-icons {
+  display: flex;
+  gap: 10px;
+}
+
 /* Dành cho màn hình nhỏ (ví dụ: điện thoại di động) */
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -203,6 +242,9 @@
   .card-profile {
     width: 45%;
   }
+  .footer__section {
+    width: 45%;
+  }
 }
 
 /* Dành cho màn hình trung bình (ví dụ: máy tính bảng) */
@@ -228,5 +270,8 @@
   }
   .card-profile {
     width: 30%;
+  }
+  .footer__section {
+    width: 35%;
   }
 }

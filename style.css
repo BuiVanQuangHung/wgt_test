@@ -1,0 +1,84 @@
+.page {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container__fluid {
+  padding: 0;
+  margin: 0;
+  background-color: #fff2f3;
+}
+
+.navbar {
+  height: 91px;
+  margin: 0 159px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__brand {
+  flex: 3;
+  cursor: pointer;
+}
+
+.navbar__actions {
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__actions-list {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.navbar__actions-item {
+  cursor: pointer;
+}
+
+.navbar__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar__buttons button {
+  padding: 15px 25px 15px 25px;
+  font-weight: bold;
+}
+
+.navbar__login-btn {
+  color: #96bb7c;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar__join-btn {
+  background-color: #96bb7c;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Dành cho màn hình nhỏ (ví dụ: điện thoại di động) */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    margin: 0 50px;
+  }
+  .navbar__actions-list {
+    display: none;
+  }
+  .navbar__actions {
+    flex: 3;
+  }
+}
+
+/* Dành cho màn hình trung bình (ví dụ: máy tính bảng) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .navbar {
+    margin: 0 50px;
+  }
+}
